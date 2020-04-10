@@ -1,0 +1,21 @@
+type Character {
+    id: ID!
+    name: String!
+    age: Int
+    locations: [Location] @relation(name: "GO_TO", direction: "OUT")
+    nation: [Nation] @relation(name: "BORN_IN", direction: "OUT")
+}
+
+type Location {
+    id: ID!
+    name: String!
+    characters: [Character] @relation(name: "GO_TO", direction: "IN")
+    nation: [Nation] @relation(name: "BELONGS", direction: "BOTH")
+}
+
+type Nation {
+    id: ID!
+    name: String!
+    characters: [Character] @relation(name: "BORN_IN", direction: "IN")
+    locations: [Location] @relation(name: "BELONGS", direction: "BOTH")
+}
