@@ -1,0 +1,106 @@
+@import "variables";
+
+.v-application {
+  font-family: 'Montserrat', sans-serif !important;
+  background: $dark-main-background !important;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+[data-color="green"] {
+  background-color: $green-light-background !important;
+  border-color: $green-light-background !important;
+
+  i{
+    color: $green-neon-border !important;
+  }
+}
+
+[data-color="purple"] {
+  background-color: $purple-light-background !important;
+  border-color: $purple-light-background !important;
+
+  i{
+    color: $purple-neon-border !important;
+  }
+}
+
+[data-color="red"] {
+  background-color: $red-light-background !important;
+  border-color: $red-light-background !important;
+
+  i{
+    color: $red-neon-border !important;
+  }
+}
+
+.v-tabs .v-tabs-bar {
+  background: $dark-main-background !important;
+
+  .v-tab:not(.v-tab--active) {
+    color: $white-foreground !important;
+  }
+}
+
+.v-tabs-items {
+  background: $dark-main-background !important;
+}
+
+.v-card {
+  padding: 50px;
+  background-color: $dark-background !important;
+  border-color: $dark-background !important;
+
+  div, p {
+    color: $white-foreground !important;
+  }
+}
+
+.custom-icon-container {
+  background-color: $white-foreground;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 10px;
+
+  i {
+    font-size: 32px !important;
+  }
+}
+
+.v-breadcrumbs .v-breadcrumbs__divider, .v-breadcrumbs__item--disabled {
+  color: $white-foreground !important;
+}
+
+#cards-section .v-input {
+  background: $dark-background !important;
+
+  input {
+    color: $white-foreground !important;;
+  }
+}
+
+#cards-section {
+  .v-input--is-focused {
+    color: $white-foreground !important;
+    caret-color: $white-foreground !important;
+
+    .v-input__control > .v-input__slot {
+      background: lighten($dark-background, 3.83) !important;
+    }
+  }
+
+  .v-input .v-icon, .v-label {
+    color: $white-foreground !important;
+  }
+}
+
+.v-data-iterator > div {
+  color: $white-foreground !important;
+  text-align: center;
+  margin: 70px 0;
+}
