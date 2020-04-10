@@ -15,10 +15,10 @@ const schema = makeAugmentedSchema({
 });
 
 const driver = neo4j.driver(
-    process.env.NEO4J_URI || 'bolt://localhost:7687',
+    process.env.NEO4J_URI || 'bolt://neo4j:7687',
     neo4j.auth.basic(
-        process.env.NEO4J_USER || 'simpsons',
-        process.env.NEO4J_PASSWORD || 'simpsons-data'
+        process.env.NEO4J_USER || 'neo4j',
+        process.env.NEO4J_PASSWORD || 'test'
     )
 );
 

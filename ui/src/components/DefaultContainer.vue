@@ -192,17 +192,17 @@
     export default {
       name: 'DefaultContainer',
       apollo: {
-        researchers: {
+        characters: {
           query: GET_ALL_CHARACTERS,
-          update: data => data.Researcher
+          update: data => data.Character
         },
-        groups: {
+        locations: {
           query: GET_ALL_LOCATIONS,
-          update: data => data.Group
+          update: data => data.Location
         },
-        projects: {
+        nations: {
           query: GET_ALL_NATIONS,
-          update: data => data.Project
+          update: data => data.Nation
         }
       },
       data() {

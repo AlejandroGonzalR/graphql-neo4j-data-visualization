@@ -1,6 +1,6 @@
 FROM neo4j:3.5.12
 
-ENV NEO4J_AUTH=simpsons/simpsons-data \
+ENV NEO4J_AUTH=neo4j/test \
     APOC_VERSION=3.5.0.5 \
     GRAPHQL_VERSION=3.5.0.4
 

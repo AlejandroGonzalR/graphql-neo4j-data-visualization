@@ -2,7 +2,7 @@
     <v-container id="main-container" fluid>
         <section>
             <div>
-                <v-breadcrumbs :items="items" divider=">>" large></v-breadcrumbs>
+                <v-breadcrumbs :items="items" large></v-breadcrumbs>
             </div>
         </section>
 
@@ -26,11 +26,6 @@
                 items: [
                     {
                         text: 'Home',
-                        disabled: false,
-                        href: 'home',
-                    },
-                    {
-                        text: 'Locations',
                         disabled: false,
                         href: 'home',
                     },

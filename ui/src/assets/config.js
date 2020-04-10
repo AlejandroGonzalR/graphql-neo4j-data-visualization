@@ -1,29 +1,29 @@
 export const graphConfig = {
     container_id: "graph-renderer",
-        server_url: "bolt://localhost:7687",
-        server_user: "neo4j",
-        server_password: "ociteb",
+        server_url: process.env.NEO4J_URI || "bolt://localhost:7687",
+        server_user: process.env.NEO4J_USER || "neo4j",
+        server_password: process.env.NEO4J_PASSWORD || "test",
         labels: {
-        "Researcher": {
+        "Character": {
             "caption": "name"
         },
-        "Group": {
+        "Location": {
             "caption": "name"
         },
-        "Project": {
+        "Nation": {
             "caption": "name"
         }
     },
     relationships: {
+        "GO_TO": {
+            "thickness": "weight",
+                "caption": false
+        },
+        "BORN_IN": {
+            "thickness": "weight",
+                "caption": false
+        },
         "BELONGS": {
-            "thickness": "weight",
-                "caption": false
-        },
-        "WORKS_ON": {
-            "thickness": "weight",
-                "caption": false
-        },
-        "PROJECTS": {
             "thickness": "weight",
                 "caption": false
         }
