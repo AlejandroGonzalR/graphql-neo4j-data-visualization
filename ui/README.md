@@ -1,4 +1,4 @@
-# ui
+# GraphQL Neo4j data visualizer - UI
 
 ## Project setup
 ```
