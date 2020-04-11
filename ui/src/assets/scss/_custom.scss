@@ -1,8 +1,8 @@
 @import "variables";
 
 .v-application {
-  font-family: 'Montserrat', sans-serif !important;
-  background: $dark-main-background !important;
+  font-family: 'Roboto', sans-serif !important;
+  background: $light-main-background !important;
 }
 
 .container {
@@ -37,29 +37,29 @@
 }
 
 .v-tabs .v-tabs-bar {
-  background: $dark-main-background !important;
+  background: $light-main-background !important;
 
   .v-tab:not(.v-tab--active) {
-    color: $white-foreground !important;
+    color: $main-foreground !important;
   }
 }
 
 .v-tabs-items {
-  background: $dark-main-background !important;
+  background: $light-main-background !important;
 }
 
 .v-card {
   padding: 50px;
-  background-color: $dark-background !important;
-  border-color: $dark-background !important;
+  background-color: $light-background !important;
+  border-color: $light-background !important;
 
   div, p {
-    color: $white-foreground !important;
+    color: $main-foreground !important;
   }
 }
 
 .custom-icon-container {
-  background-color: $white-foreground;
+  background-color: $main-foreground;
   width: 60px;
   height: 60px;
   border-radius: 50px;
@@ -73,34 +73,42 @@
 }
 
 .v-breadcrumbs .v-breadcrumbs__divider, .v-breadcrumbs__item--disabled {
-  color: $white-foreground !important;
+  color: $main-foreground !important;
 }
 
 #cards-section .v-input {
-  background: $dark-background !important;
+  background: $light-background !important;
 
   input {
-    color: $white-foreground !important;;
+    color: $main-foreground !important;
   }
 }
 
 #cards-section {
   .v-input--is-focused {
-    color: $white-foreground !important;
-    caret-color: $white-foreground !important;
+    color: $main-foreground !important;
+    caret-color: $main-foreground !important;
 
     .v-input__control > .v-input__slot {
-      background: lighten($dark-background, 3.83) !important;
+      background: lighten($light-background, 3.83) !important;
     }
   }
 
   .v-input .v-icon, .v-label {
-    color: $white-foreground !important;
+    color: $main-foreground !important;
+  }
+
+  .theme--light.v-text-field--solo-inverted > .v-input__control > .v-input__slot {
+    background: transparent !important;
   }
 }
 
 .v-data-iterator > div {
-  color: $white-foreground !important;
+  color: $main-foreground !important;
   text-align: center;
   margin: 70px 0;
+
+  .v-application .display-1 {
+    font-size: 1rem;
+  }
 }
